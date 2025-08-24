@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Text Grabber</title>
+<link rel="stylesheet" href="./popup.css" />
+</head>
+<body>
+<header>
+<h1>Text Grabber</h1>
+<button id="refresh" title="Grab/Clear">↻</button>
+</header>
+
+
+<section id="stats">
+<span id="chars">0 chars</span>
+<span id="words">0 words</span>
+</section>
+
+
+<textarea id="output" spellcheck="false" placeholder="Click refresh to grab text from the current tab..."></textarea>
+
+
+<section id="actions">
+<button id="copy">Copy</button>
+<button id="download">Download .txt</button>
+<a id="options" href="#">Settings</a>
+</section>
+
+
+<script src="./popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+{
+    "manifest_version": 3,
+    "name": "Lightweight Text Grabber",
+    "version": "1.0.2",
+    "description": "Grab selected or full-page text. Copy or download instantly.",
+    "icons": {
+      "16": "icons/16.png",
+      "48": "icons/48.png",
+      "128": "icons/128.png"
+    },
+    "action": {
+      "default_popup": "popup/popup.html",
+      "default_title": "Grab text",
+      "default_icon": {
+        "16": "icons/16.png",
+        "48": "icons/48.png",
+        "128": "icons/128.png"
+      }
+    },
+    "background": { "service_worker": "service-worker.js" },
+    "permissions": [
+      "activeTab",
+      "scripting",
+      "storage",
+      "contextMenus",
+      "clipboardWrite"
+    ],
+    "options_page": "options/options.html",
+    "commands": {
+      "grab-text": {
+        "suggested_key": { "default": "Ctrl+Shift+Y", "mac": "Command+Shift+Y" },
+        "description": "Grab selected or full page text"
+      }
+    }
+  }
+  
