@@ -78,3 +78,5 @@ All actions take place locally in your browser.
 License
 
 This project is licensed under the MIT License.
+
+https://textgrabber.crd.co/
